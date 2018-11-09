@@ -17,13 +17,13 @@ public class fibonacci_heap {
         Node new_node = new Node(name, frequency);
 
         // Merge new node with top level circular doubly linked list
-        // TODO: Make sure merge returns the max node as max_node
         max_node = merge(max_node, new_node);
 
         // Increment number of nodes
         num_of_nodes += 1;
 
-        return max_node;
+        //return max_node;
+        return new_node;
     }
 
 
