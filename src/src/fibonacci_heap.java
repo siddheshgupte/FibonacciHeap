@@ -222,8 +222,30 @@ public class fibonacci_heap {
 
     public Node merge(Node node1, Node node2) {
 
-//        TODO : WRITE THIS
-        return max_node;
+        if (node1 == null && node2 == null) {
+            return null;
+        }
+        if (node1 == null) {
+            return node2;
+        }
+        if (node2 == null) {
+            return node1;
+        }
+
+        // Merge two circular doubly linked lists
+        Node temp = node1.right;
+        node1.right = node2.right;
+        node1.right.left = node1;
+
+        node2.right = temp;
+        node2.right.left = node2;
+
+
+        // Return the max node
+        if (node1.frequency > node2.frequency) {
+            return node1;
+        }
+        return node2;
 
     }
 }
