@@ -15,14 +15,17 @@ public class fibonacci_heap {
 
         new_node.left = new_node;
         new_node.right = new_node;
+
+        // Reset the child
         new_node.child = null;
 
         // Merge new node with top level circular doubly linked list
 
-        if (max_node == null)
-            System.out.println(String.format("merging null and %s", new_node.name));
-        else
-            System.out.println(String.format("merging %s and %s", max_node.name, new_node.name));
+//        if (max_node == null)
+//            System.out.println(String.format("merging null and %s", new_node.name));
+//        else
+//            System.out.println(String.format("merging %s and %s", max_node.name, new_node.name));
+
         max_node = merge(max_node, new_node);
 
         // Increment number of nodes
@@ -66,7 +69,7 @@ public class fibonacci_heap {
         // Iterate through the children of the removed node
         if (node_to_return.child != null) {
 
-            System.out.println(String.format("child of %s is %s", node_to_return.name, node_to_return.child.name));
+//            System.out.println(String.format("child of %s is %s", node_to_return.name, node_to_return.child.name));
             test_linkedlist(node_to_return.child);
 
             Node current = node_to_return.child;
@@ -304,14 +307,14 @@ public class fibonacci_heap {
 
 //        System.out.println(lst);
     }
+
+    public void test_max_node() {
+        System.out.println(max_node);
+    }
 }
 
 
-//    def process_inputs(){
-//        if input.name in dicti:
-//            increasekey(name, freq)
-//        else:
-//            insert(name, freq)
+
 
 //a 10
 //b 10
