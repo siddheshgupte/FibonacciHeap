@@ -15,6 +15,7 @@ public class fibonacci_heap {
 
         new_node.left = new_node;
         new_node.right = new_node;
+        new_node.child = null;
 
         // Merge new node with top level circular doubly linked list
 
@@ -80,7 +81,7 @@ public class fibonacci_heap {
 
             do {
                 current.parent = null;
-                System.out.println("Stuck");
+//                System.out.println("Stuck");
                 current = current.right;
             } while (current != node_to_return.child);
         }
@@ -96,21 +97,21 @@ public class fibonacci_heap {
         // otherwise do pairwise combine
 
 //        Node[] table = new Node[(int)(Math.log(num_of_nodes)/Math.log(2))];
-        ArrayList<Node> table = new ArrayList<Node>();
+        ArrayList<Node> table = new ArrayList<>();
         // fill the table till log2n with null
         for (int i = 0; i < (int) (Math.log(num_of_nodes) / Math.log(2)); i++) {
             table.add(null);
         }
 
         // temp list to store nodes because we have to merge in the middle
-        ArrayList<Node> temp = new ArrayList<Node>();
+        ArrayList<Node> temp = new ArrayList<>();
 
         //Fill the temp list
         for (Node ele = max_node.right; temp.isEmpty() || temp.get(0) != ele; ele = ele.right) {
 //            System.out.println(ele.name);
             temp.add(ele);
         }
-        System.out.println(temp);
+//        System.out.println(temp);
 
 //        temp.add(max_node);
 //        for (Node ele = max_node.right; temp.get(0) != max_node; ele = ele.right) {
@@ -160,6 +161,10 @@ public class fibonacci_heap {
                 // Then make it a child of the bigger by merging into its child list
                 smaller.left.right = smaller.right;
                 smaller.right.left = smaller.left;
+
+                // If there are only two nodes, then the bigger ka left and right is messed up here
+                // check if the right and left after removing the smaller is the smaller node itself
+                // if it is then make the bigger a singleton
 
                 // Make the element a circular linked list so that merge function works properly
                 smaller.left = smaller;
@@ -288,16 +293,16 @@ public class fibonacci_heap {
 
     public void test_linkedlist(Node first) {
 
-        ArrayList<String> lst = new ArrayList<String>();
+        ArrayList<String> lst = new ArrayList<>();
 
         lst.add(first.name);
         for (Node ele = first.right; ele != first; ele = ele.right) {
             lst.add(ele.name);
 
-            System.out.println(ele.name);
+//            System.out.println(ele.name);
         }
 
-        System.out.println(lst);
+//        System.out.println(lst);
     }
 }
 

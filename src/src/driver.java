@@ -5,7 +5,7 @@ public class driver {
 
     public static void main(String args[]) {
 
-        HashMap dicti = new HashMap();
+        HashMap<String, Node> dicti = new HashMap<>();
         fibonacci_heap fib_heap = new fibonacci_heap();
         Scanner reader = new Scanner(System.in);
 
@@ -20,7 +20,7 @@ public class driver {
 //                System.out.println("entered: " + ip);
 
                 if (dicti.containsKey(ip_arr[0])) {
-                    Node node = fib_heap.increase_frequency((Node) dicti.get(ip_arr[0]),
+                    Node node = fib_heap.increase_frequency(dicti.get(ip_arr[0]),
                             Integer.parseInt(ip_arr[1]));
                 } else {
                     dicti.put(ip_arr[0], fib_heap.insert(new Node(ip_arr[0], Integer.parseInt(ip_arr[1]))));
@@ -45,9 +45,16 @@ public class driver {
                     stack[i] = curr_max_node;
 
                     // Print
-                    System.out.println(stack[i].name);
-                    System.out.println(stack[i].frequency);
+//                    System.out.println(stack[i].name);
+//                    System.out.println(stack[i].frequency);
                 }
+
+                // Print
+                for (Node ele : stack) {
+                    System.out.print(ele.name + ", ");
+                }
+                System.out.println();
+
 
                 for (int i = 0; i < elements_to_remove; i++) {
                     // Reinsert
