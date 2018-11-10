@@ -2,25 +2,32 @@ import java.util.ArrayList;
 
 public class fibonacci_heap {
 
-    public static void main(String[] args) {
-        System.out.println("hello world");
-    }
     Node max_node = null;
 
     // Number of nodes in heap to check if the heap is empty and also for pairwise merge table size
     int num_of_nodes = 0;
 
     // Insert
-    public Node insert(String name, int frequency) {
-
+//    public Node insert(String name, int frequency) {
+    public Node insert(Node new_node) {
         // New value is made a single node
-        Node new_node = new Node(name, frequency);
+//        Node new_node = new Node(name, frequency);
+
+        new_node.left = new_node;
+        new_node.right = new_node;
 
         // Merge new node with top level circular doubly linked list
+
+        if (max_node == null)
+            System.out.println(String.format("merging null and %s", new_node.name));
+        else
+            System.out.println(String.format("merging %s and %s", max_node.name, new_node.name));
         max_node = merge(max_node, new_node);
 
         // Increment number of nodes
         num_of_nodes += 1;
+
+        test_linkedlist(max_node);
 
         //return max_node;
         return new_node;
@@ -39,12 +46,16 @@ public class fibonacci_heap {
         Node node_to_return = max_node;
 
         // If this is the only element, then make the top level list null
-        if (num_of_nodes == 1) {
+        if (node_to_return.right == node_to_return) {
             max_node = null;
+
         } else {
             // Remove node
             max_node.left.right = max_node.right;
             max_node.right.left = max_node.left;
+
+            // Important
+            max_node = max_node.right;
         }
 
         // Decrement the number of nodes (Do this after removing node)
@@ -52,13 +63,26 @@ public class fibonacci_heap {
 
         // Set parents fields of the children of removed node to null
         // Iterate through the children of the removed node
-        Node current = node_to_return.child;
-        current.parent = null;
-        current = current.right;
+        if (node_to_return.child != null) {
 
-        while (current != node_to_return.child) {
-            current.parent = null;
-            current = current.right;
+            System.out.println(String.format("child of %s is %s", node_to_return.name, node_to_return.child.name));
+            test_linkedlist(node_to_return.child);
+
+            Node current = node_to_return.child;
+//            current.parent = null;
+//            current = current.right;
+//
+//            while (current != node_to_return.child) {
+//                System.out.println("Stuck");
+//                current.parent = null;
+//                current = current.right;
+//            }
+
+            do {
+                current.parent = null;
+                System.out.println("Stuck");
+                current = current.right;
+            } while (current != node_to_return.child);
         }
 
         // Merge the children list into the top level list
@@ -82,9 +106,18 @@ public class fibonacci_heap {
         ArrayList<Node> temp = new ArrayList<Node>();
 
         //Fill the temp list
-        for (Node ele = max_node; temp.isEmpty() || temp.get(0) != ele; ele = ele.right) {
+        for (Node ele = max_node.right; temp.isEmpty() || temp.get(0) != ele; ele = ele.right) {
+//            System.out.println(ele.name);
             temp.add(ele);
         }
+        System.out.println(temp);
+
+//        temp.add(max_node);
+//        for (Node ele = max_node.right; temp.get(0) != max_node; ele = ele.right) {
+//            System.out.println(ele.name);
+//            temp.add(ele);
+//        }
+//        System.out.println(temp);
 
         // Go through all the nodes in the temp list
         // Store in table at index == degree
@@ -112,13 +145,16 @@ public class fibonacci_heap {
 
                 Node bigger;
                 Node smaller;
-                if (existing_node.frequency > ele.frequency) {
-                    bigger = existing_node;
-                    smaller = ele;
-                } else {
-                    bigger = ele;
-                    smaller = existing_node;
-                }
+//                if (existing_node.frequency > ele.frequency) {
+//                    bigger = existing_node;
+//                    smaller = ele;
+//                } else {
+//                    bigger = ele;
+//                    smaller = existing_node;
+//                }
+
+                bigger = (existing_node.frequency > ele.frequency) ? existing_node : ele;
+                smaller = (existing_node.frequency > ele.frequency) ? ele : existing_node;
 
                 // Remove smaller out of its circular doubly linked list
                 // Then make it a child of the bigger by merging into its child list
@@ -240,6 +276,7 @@ public class fibonacci_heap {
         node2.right = temp;
         node2.right.left = node2;
 
+        test_linkedlist(node1);
 
         // Return the max node
         if (node1.frequency > node2.frequency) {
@@ -248,9 +285,35 @@ public class fibonacci_heap {
         return node2;
 
     }
+
+    public void test_linkedlist(Node first) {
+
+        ArrayList<String> lst = new ArrayList<String>();
+
+        lst.add(first.name);
+        for (Node ele = first.right; ele != first; ele = ele.right) {
+            lst.add(ele.name);
+
+            System.out.println(ele.name);
+        }
+
+        System.out.println(lst);
+    }
 }
+
+
 //    def process_inputs(){
 //        if input.name in dicti:
 //            increasekey(name, freq)
 //        else:
 //            insert(name, freq)
+
+//a 10
+//b 10
+//c 15
+//1
+//d 10
+//4
+//1
+//f 10
+//5
