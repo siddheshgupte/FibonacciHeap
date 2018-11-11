@@ -7,8 +7,7 @@ public class fibonacci_heap {
     // Number of nodes in heap to check if the heap is empty and also for pairwise merge table size
     int num_of_nodes = 0;
 
-    // Insert
-//    public Node insert(String name, int frequency) {
+    //Insert a new node into the fibonacci heap
     public Node insert(Node new_node) {
         // New value is made a single node
 //        Node new_node = new Node(name, frequency);
@@ -31,13 +30,13 @@ public class fibonacci_heap {
         // Increment number of nodes
         num_of_nodes += 1;
 
-        test_linkedlist(max_node);
+//        test_linkedlist(max_node);
 
         //return max_node;
         return new_node;
     }
 
-
+    //Remove the max node from fibonacci heap
     public Node remove_max() {
 
         // If there are no nodes then return null
@@ -70,7 +69,7 @@ public class fibonacci_heap {
         if (node_to_return.child != null) {
 
 //            System.out.println(String.format("child of %s is %s", node_to_return.name, node_to_return.child.name));
-            test_linkedlist(node_to_return.child);
+//            test_linkedlist(node_to_return.child);
 
             Node current = node_to_return.child;
 //            current.parent = null;
@@ -194,6 +193,7 @@ public class fibonacci_heap {
         return node_to_return;
     }
 
+    //Increase frequency of a node in the fibonacci heap
     public Node increase_frequency(Node node, int new_frequency) {
 
         // The frequency has to be positive otherwise it is a way to decrease frequency
@@ -216,6 +216,7 @@ public class fibonacci_heap {
         return node;
     }
 
+    //Start a cascading cut from given node
     public void cascading_cut(Node node_to_cut) {
         node_to_cut.child_cut = false;
 
@@ -264,6 +265,7 @@ public class fibonacci_heap {
 
     }
 
+    //Merge two circular doubly linked lists
     public Node merge(Node node1, Node node2) {
 
         if (node1 == null && node2 == null) {
@@ -284,7 +286,7 @@ public class fibonacci_heap {
         node2.right = temp;
         node2.right.left = node2;
 
-        test_linkedlist(node1);
+//        test_linkedlist(node1);
 
         // Return the max node
         if (node1.frequency > node2.frequency) {
@@ -294,6 +296,7 @@ public class fibonacci_heap {
 
     }
 
+    //Utility function to test if a linked list containing the input node is correctly circular
     public void test_linkedlist(Node first) {
 
         ArrayList<String> lst = new ArrayList<>();
@@ -308,6 +311,7 @@ public class fibonacci_heap {
 //        System.out.println(lst);
     }
 
+    //Utility function to peek max node
     public void test_max_node() {
         System.out.println(max_node);
     }
