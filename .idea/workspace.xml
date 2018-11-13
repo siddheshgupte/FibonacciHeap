@@ -4,7 +4,6 @@
     <list default="true" id="91e8124c-a178-406c-8d4e-e8ae1a05a4aa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/fibonacci_heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/fibonacci_heap.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,19 +15,21 @@
     <session id="-1262975177">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.90" value="1" />
           <entry key="project.open.time.91" value="2" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.93" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
           <entry key="java" value="6" />
+          <entry key="md" value="1" />
           <entry key="txt" value="9" />
         </counts>
       </usages-collector>
@@ -36,19 +37,20 @@
         <counts>
           <entry key="IDEA_MODULE" value="1" />
           <entry key="JAVA" value="6" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="10644" />
-          <entry key="txt" value="258" />
+          <entry key="java" value="11017" />
+          <entry key="txt" value="307" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10644" />
-          <entry key="PLAIN_TEXT" value="258" />
+          <entry key="JAVA" value="11017" />
+          <entry key="PLAIN_TEXT" value="307" />
         </counts>
       </usages-collector>
     </session>
@@ -58,17 +60,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/src/fibonacci_heap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3810">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="134">
+              <caret line="320" selection-start-line="320" selection-end-line="330" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/src/driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="40" column="48" lean-forward="true" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+            <state relative-caret-position="100">
+              <caret line="86" column="33" lean-forward="true" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47294">
-              <caret line="2782" column="227" lean-forward="true" selection-start-line="2782" selection-start-column="227" selection-end-line="2782" selection-end-column="227" />
+            <state relative-caret-position="136">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -88,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/output_file.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8296">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -184,7 +196,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542130606051" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542130608717" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -249,7 +261,8 @@
       <workItem from="1541720086291" duration="52429000" />
       <workItem from="1541950087579" duration="8127000" />
       <workItem from="1542048493934" duration="5225000" />
-      <workItem from="1542123091404" duration="6462000" />
+      <workItem from="1542123091404" duration="6586000" />
+      <workItem from="1542133635471" duration="987000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1541559569688</created>
@@ -321,17 +334,24 @@
       <option name="project" value="LOCAL" />
       <updated>1542068368545</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add file output and $ keyword logic">
+      <created>1542130651456</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1542130651456</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111796000" />
+    <option name="totallyTimeSpent" value="112907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1307" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18203689" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18524459" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -340,7 +360,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.15692307" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31846154" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5123077" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -388,7 +408,8 @@
     <MESSAGE value="Cleanup" />
     <MESSAGE value="Add comments and documentation pdf" />
     <MESSAGE value="Add file input" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add file input" />
+    <MESSAGE value="Add file output and $ keyword logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add file output and $ keyword logic" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -439,32 +460,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/src/fibonacci_heap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3810">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="134">
+          <caret line="320" selection-start-line="320" selection-end-line="330" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_file.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8296">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47294">
-          <caret line="2782" column="227" lean-forward="true" selection-start-line="2782" selection-start-column="227" selection-end-line="2782" selection-end-column="227" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/src/driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="40" column="48" lean-forward="true" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+        <state relative-caret-position="100">
+          <caret line="86" column="33" lean-forward="true" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_file.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>

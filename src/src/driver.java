@@ -8,6 +8,15 @@ import java.util.List;
 
 public class driver {
 
+    private static boolean first_time_opening_file = true;
+
+    public static boolean is_first_file_open() {
+        if (first_time_opening_file) {
+            first_time_opening_file = false;
+            return true;
+        }
+        return false;
+    }
 
     public static List<String> read_lines_from_file(String file_name) {
         List<String> all_lines = new ArrayList<>();
@@ -78,6 +87,12 @@ public class driver {
             // Print (Replace this by writing to file)
             try {
                 File file = new File("output_file.txt");
+
+                if (file.exists() && is_first_file_open()) {
+                    file.delete();
+                    file.createNewFile();
+                }
+
                 if (!file.exists()) {
                     file.createNewFile();
                 }
