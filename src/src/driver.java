@@ -1,10 +1,54 @@
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
 
 public class driver {
 
+
+    public static List<String> read_lines_from_file(String file_name) {
+        List<String> all_lines = new ArrayList<>();
+
+        try {
+            all_lines = Files.readAllLines(Paths.get(file_name));
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+
+        return all_lines;
+    }
+
+    public static void process_lines_to_fibonacci_heap(List<String> lines_in_file) {
+        // Hash table
+        HashMap<String, Node> dicti = new HashMap<>();
+
+        // Instantiate fibonacci heap
+        fibonacci_heap fib_heap = new fibonacci_heap();
+
+        for (String line : lines_in_file) {
+            line = line.strip();
+            System.out.println(line);
+        }
+    }
+
     public static void main(String args[]) {
 
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Enter file_name");
+        String file_name = reader.nextLine();
+
+        List<String> lines_from_file = read_lines_from_file(file_name);
+
+        process_lines_to_fibonacci_heap(lines_from_file);
+    }
+
+    public void one_by_one() {
         // Hash table
         HashMap<String, Node> dicti = new HashMap<>();
 
@@ -67,8 +111,11 @@ public class driver {
                 }
             }
         }
+
     }
 }
+
+
 //    def process_inputs(){
 //        if input.name in dicti:
 //            increasekey(name, freq)
