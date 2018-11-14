@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91e8124c-a178-406c-8d4e-e8ae1a05a4aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/src/keywordcounter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Report.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/keywordcounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/keywordcounter.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,15 +15,16 @@
     <session id="-1262975177">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.156" value="1" />
           <entry key="project.open.time.63" value="1" />
+          <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.90" value="1" />
           <entry key="project.open.time.91" value="3" />
           <entry key="project.open.time.93" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -46,16 +45,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="11107" />
+          <entry key="java" value="11221" />
           <entry key="md" value="1" />
-          <entry key="txt" value="342" />
+          <entry key="txt" value="362" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11107" />
+          <entry key="JAVA" value="11221" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="342" />
+          <entry key="PLAIN_TEXT" value="362" />
         </counts>
       </usages-collector>
     </session>
@@ -86,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/src/driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1190">
+            <state relative-caret-position="697">
               <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -95,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/src/keywordcounter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="124" column="37" selection-start-line="124" selection-start-column="37" selection-end-line="124" selection-end-column="37" />
+            <state relative-caret-position="55">
+              <caret line="112" column="51" lean-forward="true" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -108,16 +107,16 @@
         <entry file="file://$PROJECT_DIR$/test.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/output_file.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -165,8 +164,8 @@
         <option value="$PROJECT_DIR$/src/src/fibonacci_heap.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/src/driver.java" />
-        <option value="$PROJECT_DIR$/src/src/keywordcounter.java" />
         <option value="$PROJECT_DIR$/test.txt" />
+        <option value="$PROJECT_DIR$/src/src/keywordcounter.java" />
       </list>
     </option>
   </component>
@@ -187,6 +186,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,14 +210,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542214233641" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542226828869" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -248,7 +247,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.driver">
+  <component name="RunManager" selected="Application.keywordcounter">
     <configuration name="driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="driver" />
       <module name="src" />
@@ -263,12 +262,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="keywordcounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="keywordcounter" />
+      <module name="src" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.fibonacci_heap" />
       <item itemvalue="Application.driver" />
+      <item itemvalue="Application.keywordcounter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.keywordcounter" />
         <item itemvalue="Application.driver" />
       </list>
     </recent_temporary>
@@ -291,7 +299,8 @@
       <workItem from="1542123091404" duration="6586000" />
       <workItem from="1542133635471" duration="1072000" />
       <workItem from="1542150330458" duration="3960000" />
-      <workItem from="1542205390273" duration="7041000" />
+      <workItem from="1542205390273" duration="7169000" />
+      <workItem from="1542226189136" duration="626000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1541559569688</created>
@@ -377,17 +386,24 @@
       <option name="project" value="LOCAL" />
       <updated>1542134721208</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add command line logic">
+      <created>1542214304387</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1542214304387</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123993000" />
+    <option name="totallyTimeSpent" value="124747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1307" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19165999" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19486769" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -396,7 +412,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31846154" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31846154" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5123077" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -446,7 +462,8 @@
     <MESSAGE value="Add file input" />
     <MESSAGE value="Add file output and $ keyword logic" />
     <MESSAGE value="Add file replace logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add file replace logic" />
+    <MESSAGE value="Add command line logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add command line logic" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -488,6 +505,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/driver.java" />
     <entry file="file://$PROJECT_DIR$/src/src/fibonacci_heap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -505,19 +523,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/driver.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/src/driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1190">
+        <state relative-caret-position="697">
           <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -525,24 +533,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/keywordcounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="124" column="37" selection-start-line="124" selection-start-column="37" selection-end-line="124" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/output_file.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/keywordcounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="112" column="51" lean-forward="true" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
         </state>
       </provider>
     </entry>

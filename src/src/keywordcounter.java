@@ -110,9 +110,8 @@ public class keywordcounter {
                     names.add(ele.name);
                 }
                 writer.append(String.join(",", names));
-//                System.out.println();
-                writer.append("\n");
-
+                // Use this instead of "\n" as "\n" does not work in notepad
+                writer.append(System.getProperty("line.separator"));
                 writer.close();
             } catch (IOException e) {
                 System.out.println(e);
