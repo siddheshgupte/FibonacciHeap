@@ -1,12 +1,15 @@
-import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Scanner;
 
-public class driver {
+public class keywordcounter {
 
     private static boolean first_time_opening_file = true;
 
@@ -46,7 +49,7 @@ public class driver {
 //        line = line.strip();
 
         line = line.trim();
-        System.out.println(line);
+//        System.out.println(line);
         String[] ip_arr = line.split(" ");
 
         if (line.toLowerCase().equals("stop")) {
@@ -103,11 +106,11 @@ public class driver {
 
                 List<String> names = new ArrayList<>();
                 for (Node ele : stack) {
-                    System.out.print(ele.name + ", ");
+//                    System.out.print(ele.name + ", ");
                     names.add(ele.name);
                 }
                 writer.append(String.join(",", names));
-                System.out.println();
+//                System.out.println();
                 writer.append("\n");
 
                 writer.close();
@@ -126,9 +129,14 @@ public class driver {
 
     public static void main(String args[]) {
 
-        Scanner reader = new Scanner(System.in);
-        System.out.println("Enter file_name");
-        String file_name = reader.nextLine();
+        String file_name = "";
+        if (args.length == 1) {
+            file_name = args[0];
+        } else {
+            Scanner reader = new Scanner(System.in);
+            System.out.println("Enter file_name");
+            file_name = reader.nextLine();
+        }
 
         List<String> lines_from_file = read_lines_from_file(file_name);
 
